@@ -1,0 +1,75 @@
+.box-home {
+    margin-top: 62px;
+    width: 100%;
+    height: 400px;
+    background-image: url("/ProjectWebpro/materials/home/MechanicalKeyboard.jpg");
+}
+
+.box-switch {
+    margin-top: 62px;
+    width: 100%;
+    height: 400px;
+    background-image: url("/ProjectWebpro/materials/switch/switch.jpg");
+}
+
+.box2 {
+    margin-top: 0px;
+    width: 100%;
+    height: 550px;
+    background-color: rgb(50, 50, 50);
+    animation: fadein 3s;
+}
+
+.box3 {
+    margin-top: 0px;
+    width: 100%;
+    height: 550px;
+    background-color: rgb(70, 70, 70);
+    animation: fadein 3s;
+}
+
+.box4 {
+    margin-top: 0px;
+    width: 100%;
+    height: 550px;
+    background-color: rgb(90, 90, 90);
+    animation: fadein 3s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.textbox1 {
+    text-align: left;
+    float: left;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin-left: 0px;
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.textbox2 {
+    text-align: left;
+    word-wrap: break-word;
+    float: left;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    margin-left: 10px;
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.pic{
+    float: left;
+    margin-top: 60px;
+    margin-left: 0px;
+}
