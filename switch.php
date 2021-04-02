@@ -31,6 +31,13 @@
                 transform: translateY(0);
             }
         }
+
+        .swtlink {
+            font-size: 25px;
+            margin-left: 10px;
+            margin-top: 20px;
+            color: #FF33FC;
+        }
     </style>
 </head>
 
@@ -58,7 +65,7 @@
                         <div class="textbox1">
                             <h1>Mechanical Switch คืออะไร?</h1>
                         </div>
-                        <img class="pic" src="https://cdn.shopify.com/s/files/1/0328/6034/0364/t/4/assets/pf-d7c3ac81--1000WirelessandWired540x.gif?v=1592298252" alt="keyboard" width=600 height="auto" />
+                        <img class="pic" src="/ProjectWebpro/materials/switch/switchDemo.gif" alt="keyboard" width=500 height="auto" />
                     </th>
                     <td width="800" height="500">
                         <br>
@@ -66,8 +73,8 @@
                         <br>
                         <br>
                         <br>
-                        <div class="textbox2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </div>
-                        <div class="textbox2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; จุดแตกต่างหลักๆ ของเจ้า Mechanical Keyboard กับ Rubber Dome คือมันไม่ได้ใช้แผงยางแบบเดียวกันกับคีย์บอร์ดปกติ แต่ใช้สวิตช์แยกแต่ละตัวแยกกันแต่ละปุ่ม ซึ่งแต่ละปุ่มนั้นก็มีการทำงานแยกกันอย่างชัดเจนและมีกลไกแยกกัน ดังนั้นถ้าปุ่มพังปุ่มเดียว ส่งซ่อมเปลี่ยนแค่ปุ่มเดียวก็กลับมาทำงานได้ครับ (ยกเว้นแผงบอร์ดวงจรด้านล่างพังนะ ซึ่งยากมาก)</div>
+                        <div class="textbox2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; คีย์บอร์ดสำหรับเล่นเกมคอมพิวเตอร์ที่ได้รับความนิยมอยู่ในขณะนี้ ส่วนใหญ่จะเลือกใช้สวิตช์ปุ่มกดแบบที่เรียกว่า Mechanical Switch (แมคคานิคอล สวิตช์) </div>
+                        <div class="textbox2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; สวิตช์ของคีย์บอร์ด Mechanical นั้นจะมีแบ่งออกเป็นหลายสีซึ่งมีกลไกการทำงานที่แตกต่างกัน แยกออกเป็น 3 ประเภทหลัก ๆ คือ Linear Switch, Clicky Switch และ Tactile Switch ซึ่งแต่ละประเภทก็แบ่งออกมาเป็นหลายๆสีซึ่งแต่ละสีก็จะมีน้ำหนักการกดที่แตกต่างกัน</div>
                     </td>
                 </tr>
             </table>
@@ -79,21 +86,14 @@
                 <tr>
                     <th width="700" height="500">
                         <div class="textbox1">
-                            <h1>Mechanical Keyboard ดียังไง?</h1>
+                            <h1>ยี่ห้อ Mechanical Switch</h1>
                         </div>
-                        <img class="pic" src="/ProjectWebpro/materials/home/mk2.jpg" alt="keyboard2" width=600 height="auto" />
+                        <img class="pic" src="/ProjectWebpro/materials/switch/brand.jpg" alt="keyboard2" width=500 height="auto" />
                     </th>
                     <td width="800" height="500">
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <div class="textbox2">1. ทนกว่า Membrane Keyboard (rubber dome) มาก</div>
-                        <div class="textbox2">2. ตอบสนองเร็วกว่า ทำให้พิมพ์เร็ว เล่นเกมส์ดีกว่า และนิ้วไม่ล้าอีกด้วย</div>
-                        <div class="textbox2">3. มักมีการป้องกัน Key Rollover คือสามารถกดหลายๆปุ่มพร้อมกันได้</div>
-                        <div class="textbox2">4. ถอด Keycaps ทำความสะอาดได้ง่าย</div>
-                        <div class="textbox2">5. มีสวิตซ์ คีย์แคป ไฟ เฟรม หลายแบบให้เลือกตามความต้องการ</div>
+                        <div class="textbox2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Mechanical Switch แต่ละแบรนด์ก็จะมีหลากหลายแบรนด์ให้เลือกซึ่งแบรนด์หลักก็จะมี <a class="swtlink" target="_blank" href="https://www.cherrymx.de/en">Cherry</a> , <a class="swtlink" target="_blank" href="http://en.gateron.cn/">Gateron</a> , <a class="swtlink" target="_blank" href="https://www.kailhswitch.com/faq1">Kailh</a> , <a class="swtlink" target="_blank" href="https://www.razer.com/razer-mechanical-switches">Razer</a> , <a class="swtlink" target="_blank" href="https://www.logitechg.com/th-th/innovation/mechanical-switches.html">Logitech</a> , <a class="swtlink" target="_blank" href="https://www.pcgamingrace.com/products/glorious-panda-mechanical-switches">Glorious</a> ความแตกต่างของแต่ละแบรนด์คือราคา
+                            ยิ่งราคาสูง งานประกอบและวัสดุก็ยิ่งดี</div>
+
 
                     </td>
                 </tr>
