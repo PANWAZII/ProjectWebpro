@@ -93,8 +93,6 @@
                     <td width="800" height="500">
                         <div class="textbox2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Mechanical Switch แต่ละแบรนด์ก็จะมีหลากหลายแบรนด์ให้เลือกซึ่งแบรนด์หลักก็จะมี <a class="swtlink" target="_blank" href="https://www.cherrymx.de/en">Cherry</a> , <a class="swtlink" target="_blank" href="http://en.gateron.cn/">Gateron</a> , <a class="swtlink" target="_blank" href="https://www.kailhswitch.com/faq1">Kailh</a> , <a class="swtlink" target="_blank" href="https://www.razer.com/razer-mechanical-switches">Razer</a> , <a class="swtlink" target="_blank" href="https://www.logitechg.com/th-th/innovation/mechanical-switches.html">Logitech</a> , <a class="swtlink" target="_blank" href="https://www.pcgamingrace.com/products/glorious-panda-mechanical-switches">Glorious</a> ความแตกต่างของแต่ละแบรนด์คือราคา
                             ยิ่งราคาสูง งานประกอบและวัสดุก็ยิ่งดี</div>
-
-
                     </td>
                 </tr>
             </table>
