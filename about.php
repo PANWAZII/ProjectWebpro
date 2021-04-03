@@ -141,7 +141,7 @@
             <div class="panwa">Panwa Muangsong</div>
             <br>
             <p>Hello world, my name is Panwa. I am studying Computer Science at Rangsit University.</p>
-            <p>I create this website as a Web programming(CSC350) project.</p>
+            <p>I create this website as a Web Programming(CSC350) project.</p>
             <br>
             <div class="skill">
                 <p style="color:Tomato;">MySkills.Coding(); --> Java, Python, C, Php, HTML, CSS</p>
