@@ -22,6 +22,7 @@
 
         .panwapro {
             animation: fadein 2s;
+            -webkit-filter: drop-shadow(0px 0px 8px #000000);
         }
 
         @keyframes slideup1 {
@@ -65,8 +66,9 @@
             background-color: rgb(25, 25, 25);
             border-radius: 25px;
             box-shadow: 0px 0px 10px #000000;
+            animation: fadein 1s;
         }
-
+    
         .contact {
             margin-top: 50px;
             font-family: 'Varela Round', sans-serif;
@@ -74,8 +76,7 @@
             font-size: 25px;
             color: white;
             text-shadow: 2px 2px 8px #000000;
-            animation: wb 5s;
-            animation-iteration-count: infinite;
+            animation: fadein 2s,wb 5s infinite;
         }
 
         .contact-links {
@@ -83,19 +84,20 @@
             font-weight: 400;
             font-size: 15px;
             color: white;
-            text-shadow: 2px 2px 8px #000000
+            animation: fadein 1s;
         }
 
-        .contact-links :hover {
+        .contact-links:hover {
             font-family: 'Varela Round', sans-serif;
             font-weight: 400;
             font-size: 15px;
             color: orange;
-            
+
         }
 
         .contact-pics {
             margin-top: 20;
+            animation: slideup1 1s;
             transition: transform .2s;
         }
 
@@ -114,6 +116,13 @@
             font-weight: 400;
             font-size: 20px;
             color: white;
+            animation: fadein 2s;
+            text-shadow: 0px 0px 9px #000000;
+        }
+
+        .skill {
+            margin-left: 400px;
+            text-align: left;
         }
     </style>
 </head>
@@ -133,12 +142,21 @@
             <div class="panwapro"><img src="/ProjectWebpro/materials/about/panwa.png" alt="panwapf" width=300 height="auto"></div>
             <div class="panwa">Panwa Muangsong</div>
             <br>
-            <p>Hi my name is Panwa</p>
-            <p>6200882</p>
+            <p>Hello world, my name is Panwa. I am studying Computer Science at Rangsit University.</p>
+            <p>I create this website as a CSC350 project.</p>
+            <br>
+            <div class="skill">
+                <p style="color:Tomato;">MySkills.Coding(); --> Java, Python, C, Php, HTML, CSS</p>
+                <p style="color:Tomato;">MySkills.Hardware(); --> Arduino, Raspberry Pi</p>
+                <p style="color:Tomato;">MySkills.Network(); --> Network monitoring, Phishing attack</p>
+                <p style="color:Tomato;">MySkills.OS(); --> Windows, Ubuntu, Kali Linux</p>
+            </div>
+            <br>
+            <br>
             <div class="contact">
                 <div class="contact">Contact me</div>
                 <br>
-                <table border="1">
+                <table>
                     <tr>
                         <th width="150"><a target="_blank" href="https://www.facebook.com/PANWAZII">
                                 <div> <img class="contact-pics" src="/ProjectWebpro/materials/about/facebook.png" alt="" width=60 height="auto"><br>
