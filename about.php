@@ -13,7 +13,6 @@
             font-family: 'Varela Round', sans-serif;
             font-weight: 400;
             font-size: 35px;
-            /* margin-top: 200px; */
             color: rgb(255, 255, 255);
             text-shadow: 2px 2px 8px #000000;
             animation: slideup1 1s, fadein 2s;
@@ -21,8 +20,7 @@
         }
 
         .panwapro {
-            animation: fadein 2s;
-            -webkit-filter: drop-shadow(0px 0px 8px #000000);
+            animation: slideup1 1s, fadein 2s;
         }
 
         @keyframes slideup1 {
@@ -45,7 +43,7 @@
             }
 
             50% {
-                color: #000000;
+                color: #FFFFFF;
             }
 
             75% {
@@ -143,7 +141,7 @@
             <div class="panwa">Panwa Muangsong</div>
             <br>
             <p>Hello world, my name is Panwa. I am studying Computer Science at Rangsit University.</p>
-            <p>I create this website as a CSC350 project.</p>
+            <p>I create this website as a Web programming(CSC350) project.</p>
             <br>
             <div class="skill">
                 <p style="color:Tomato;">MySkills.Coding(); --> Java, Python, C, Php, HTML, CSS</p>
