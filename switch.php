@@ -99,30 +99,6 @@
         </center>
     </div>
 
-    <div class="box4">
-        <center>
-            <table border="0">
-                <tr>
-                    <th width="700" height="500">
-                        <div class="textbox1">
-                            <h1>ข้อเสียของ Mechanical Keyboard</h1>
-                        </div>
-                        <img class="pic" src="/ProjectWebpro/materials/home/mk3.jpg" alt="keyboard2" width=600 height="auto" />
-                    </th>
-                    <td width="800" height="500">
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <div class="textbox2">1. มีราคาที่ค่อนข้างสูง</div>
-                        <div class="textbox2">2. เวลาพิมพ์เสียงมักจะดังกว่า โดยจะดังมากหรือน้อยขึ้นอยู่กับสวิตซ์ที่เลือกใช้</div>
-                        <div class="textbox2">3. น้ำหนักมากกว่าแบบ Membrane</div>
-                    </td>
-                </tr>
-            </table>
-        </center>
-    </div>
 
     <?php
     $path = $_SERVER['DOCUMENT_ROOT'];
