@@ -66,7 +66,7 @@
             box-shadow: 0px 0px 10px #000000;
             animation: fadein 1s;
         }
-    
+
         .contact {
             margin-top: 50px;
             font-family: 'Varela Round', sans-serif;
@@ -74,7 +74,7 @@
             font-size: 25px;
             color: white;
             text-shadow: 2px 2px 8px #000000;
-            animation: fadein 2s,wb 5s infinite;
+            animation: fadein 2s, wb 5s infinite;
         }
 
         .contact-links {
@@ -119,8 +119,10 @@
         }
 
         .skill {
-            margin-left: 400px;
+            justify-content: center;
             text-align: left;
+            width: 45%;
+            height: 120px;
         }
     </style>
 </head>
@@ -143,12 +145,13 @@
             <p>Hello world, my name is Panwa. I am studying Computer Science at Rangsit University.</p>
             <p>I create this website as a Web Programming(CSC350) project.</p>
             <br>
-            <div class="skill">
-                <p style="color:Tomato;">MySkills.Coding(); --> Java, Python, C, Php, HTML, CSS</p>
-                <p style="color:Tomato;">MySkills.Hardware(); --> Arduino, Raspberry Pi</p>
-                <p style="color:Tomato;">MySkills.Network(); --> Network monitoring, Phishing attack</p>
-                <p style="color:Tomato;">MySkills.OS(); --> Windows, Ubuntu, Kali Linux</p>
-            </div>
+                <div class="skill">
+                    <p style="color:Tomato;">MySkills.Coding(); --> Java, Python, C, Php, HTML, CSS</p>
+                    <p style="color:Tomato;">MySkills.Hardware(); --> Arduino, Raspberry Pi</p>
+                    <p style="color:Tomato;">MySkills.Network(); --> Network monitoring, Phishing attack</p>
+                    <p style="color:Tomato;">MySkills.OS(); --> Windows, Ubuntu, Kali Linux</p>
+                </div>
+
             <br>
             <br>
             <div class="contact">
