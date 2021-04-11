@@ -2,8 +2,8 @@
 
     $servername = "localhost";
     $username = "root";
-    $password = "1234";
-    $dbname = "webprodb";
+    $password = "";
+    $dbname = "projectwebpro";
 
     // Create Connection
     $conn = mysqli_connect($servername, $username, $password, $dbname);

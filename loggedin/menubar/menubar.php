@@ -8,8 +8,7 @@
         <li><a href="/ProjectWebpro/keycap.php">Keycaps</a></li>
         <li><a href="/ProjectWebpro/about.php">About</a></li>
         <li><a href="/ProjectWebpro/comment.php">Comment</a></li>
-        <a href="/ProjectWebpro/login.php"><button>Login</button></a>
-        <a href="/ProjectWebpro/register.php"><button>Register</button></a>
+        <h2>Username:<?php echo $_SESSION['username']; ?></h2>
     </ul>
 </nav>
 </div>

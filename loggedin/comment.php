@@ -12,7 +12,7 @@
     <div>
         <?php
         $path = $_SERVER['DOCUMENT_ROOT'];
-        $path .= "/ProjectWebpro/menubar/menubar.html";
+        $path .= "/ProjectWebpro/loggedin/menubar/menubar.php";
         include_once($path);
         ?>
 

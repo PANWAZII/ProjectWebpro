@@ -27,6 +27,9 @@ include('connectDB.php');
         }
 
         .textbox {
+            font-family: 'Varela Round', sans-serif;
+            font-weight: 400;
+            font-size: 17px;
             margin-top: 10px;
             min-width: 300px;
             min-height: 40px;
@@ -108,36 +111,48 @@ include('connectDB.php');
 
     <br>
     <center>
-        <div class="box">
-            <br>
-            <table>
-                <tr>
-                    <th width=300 height="auto"></th>
-                    <td width=300 height="auto"></td>
-                </tr>
-                <tr>
-                    <th colspan="2" width=300 height="auto">
-                        <div class="text-header">Login</div>
-                    </th>
-                </tr>
-                <tr>
-                    <th colspan="2" width=300 height="auto">
-                        <div class="text-normal">Email</div>
-                        <input type="text" class="textbox" name="username" required>
-                    </th>
-                </tr>
-                <tr>
-                    <th colspan="2" width=300 height="auto">
-                        <div class="text-normal">Password</div>
-                        <input type="text" class="textbox" name="password" required>
-                    </th>
-                </tr>
-                <tr>
-                    <td colspan="2" width=300 height="auto"><a href="/ProjectWebpro/register.php" class="link">Don't have an account yet?</a><input class="button" type="button" value="Login"></td>
-                </tr>
-            </table>
+        <form action="loginDB.php" method="post">
+            <?php if (isset($_SESSION['error'])) : ?>
+                <div class="error">
+                    <h3>
+                        <?php
+                        echo $_SESSION['error'];
+                        unset($_SESSION['error']);
+                        ?>
+                    </h3>
+                </div>
+            <?php endif ?>
+            <div class="box">
+                <br>
+                <table>
+                    <tr>
+                        <th width=300 height="auto"></th>
+                        <td width=300 height="auto"></td>
+                    </tr>
+                    <tr>
+                        <th colspan="2" width=300 height="auto">
+                            <div class="text-header">Login</div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th colspan="2" width=300 height="auto">
+                            <div class="text-normal">Email</div>
+                            <input type="text" class="textbox" name="email" required>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th colspan="2" width=300 height="auto">
+                            <div class="text-normal">Password</div>
+                            <input type="password" class="textbox" name="password" required>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td colspan="2" width=300 height="auto"><a href="/ProjectWebpro/register.php" class="link">Don't have an account yet?</a><button class="button" type="submit" name="user_login">login</button></td>
+                    </tr>
+                </table>
 
-        </div>
+            </div>
+        </form>
     </center>
 </body>
 
