@@ -19,7 +19,7 @@ include('connectDB.php');
         .box {
             margin-top: 150px;
             margin-bottom: 30px;
-            width: 30%;
+            width: 600px;
             height: 550px;
             background-color: rgb(25, 25, 25);
             border-radius: 25px;
