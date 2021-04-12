@@ -5,7 +5,7 @@
     $errors = array();
 
     if (isset($_POST['user_login'])) {
-        $email = mysqli_real_escape_string($conn, $_POST['email']);
+        $username = mysqli_real_escape_string($conn, $_POST['username']);
         $password = mysqli_real_escape_string($conn, $_POST['password']);
 
         if (empty($username)) {
@@ -17,14 +17,12 @@
         }
 
         if (count($errors) == 0) {
-            $query = "SELECT * FROM user WHERE email = '$email' AND password = '$password' ";
+            $query = "SELECT * FROM user WHERE username = '$username' AND password = '$password' ";
             $result = mysqli_query($conn, $query);
             
 
             if (mysqli_num_rows($result) == 1) {
-                $ID = "SELECT username FROM user WHERE email = '$email' AND password = '$password'";
                 $_SESSION['username'] = $username;
-                $_SESSION['ID'] = $ID;
                 $_SESSION['success'] = "Your are now logged in";
                 header("location: /ProjectWebpro/loggedin/index.php");
             } else {

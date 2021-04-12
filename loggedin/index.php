@@ -1,17 +1,16 @@
 <?php
 session_start();
 
-if (!isset($_SESSION['id'])) {
+if (!isset($_SESSION['username'])) {
     $_SESSION['msg'] = "You must log in first";
     header('location: /ProjectWebpro/login.php');
 }
 
 if (isset($_GET['logout'])) {
     session_destroy();
-    unset($_SESSION['id']);
+    unset($_SESSION['username']);
     header('location: /ProjectWebpro/login.php');
 }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,7 +20,6 @@ if (isset($_GET['logout'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <?php include "/ProjectWebpro/box.css" ?> -->
     <link rel="stylesheet" href="/ProjectWebpro/box.css?v=<?php echo time(); ?>">
     <style>
         .mech {

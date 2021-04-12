@@ -136,8 +136,8 @@ include('connectDB.php');
                     </tr>
                     <tr>
                         <th colspan="2" width=300 height="auto">
-                            <div class="text-normal">Email</div>
-                            <input type="text" class="textbox" name="email" required>
+                            <div class="text-normal">Username</div>
+                            <input type="text" class="textbox" name="username" required>
                         </th>
                     </tr>
                     <tr>
