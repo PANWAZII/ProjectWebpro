@@ -147,7 +147,7 @@ include('connectDB.php');
                         </th>
                     </tr>
                     <tr>
-                        <td colspan="2" width=300 height="auto"><a href="/ProjectWebpro/register.php" class="link">Don't have an account yet?</a><button class="button" type="submit" name="user_login">login</button></td>
+                        <td colspan="2" width=300 height="auto"><a href="/ProjectWebpro/register.php" class="link">Don't have an account yet?</a><button class="button" type="submit" name="user_login">Login</button></td>
                     </tr>
                 </table>
 
