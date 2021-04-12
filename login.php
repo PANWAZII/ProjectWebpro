@@ -82,11 +82,12 @@ include('connectDB.php');
 
         .button:hover {
             padding: 9px 25px;
-            background-color: rgba(0, 136, 169, 0.8);
+            background-color: rgba(0, 136, 169, 1);
             border: none;
             border-radius: 50px;
             cursor: pointer;
             transition: all 0.3s ease 0s;
+            color: orange;
         }
 
         .link {
