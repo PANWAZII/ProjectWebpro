@@ -21,6 +21,11 @@
             background-color: rgb(50, 50, 50);
         }
 
+        .container {
+            height: 550px;
+            width: 100%;
+        }
+
         table {
             margin-top: 300px;
         }
@@ -80,6 +85,7 @@
     </div>
 
     <br>
+    <div class="container">
     <center>
         <table>
             <tr>
@@ -98,6 +104,12 @@
             </tr>
         </table>
     </center>
+    </div>
+    <?php
+    $path = $_SERVER['DOCUMENT_ROOT'];
+    $path .= "/ProjectWebpro/footer/footer.html";
+    include_once($path);
+    ?>
 
 </body>
 
