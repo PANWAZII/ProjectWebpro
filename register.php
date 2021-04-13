@@ -17,10 +17,10 @@ include('connectDB.php');
         }
 
         .box {
-            margin-top: 150px;
+            margin-top: 120px;
             margin-bottom: 30px;
             width: 600px;
-            height: 650px;
+            height: 800px;
             background-color: rgb(25, 25, 25);
             border-radius: 25px;
             box-shadow: 0px 0px 10px #000000;
@@ -137,8 +137,20 @@ include('connectDB.php');
                     </tr>
                     <tr>
                         <th colspan="2" width=300 height="auto">
+                            <div class="text-normal">First Name</div>
+                            <input type="text" class="textbox" name="firstname" required>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th colspan="2" width=300 height="auto">
+                            <div class="text-normal">Last Name</div>
+                            <input type="text" class="textbox" name="lastname" required>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th colspan="2" width=300 height="auto">
                             <div class="text-normal">Email</div>
-                            <input type="text" class="textbox" name="email" required>
+                            <input type="email" class="textbox" name="email" required>
                         </th>
                     </tr>
                     <tr>
