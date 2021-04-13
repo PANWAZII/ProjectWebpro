@@ -23,6 +23,9 @@ if (isset($_GET['logout'])) {
 
     <link rel="stylesheet" href="/ProjectWebpro/box.css?v=<?php echo time(); ?>">
     <style>
+        .body {
+            background-color: rgb(50, 50, 50);
+        }
         .mech {
             text-align: left;
             float: left;

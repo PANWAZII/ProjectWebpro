@@ -22,6 +22,10 @@ if (isset($_GET['logout'])) {
     <title>Document</title>
     <link rel="stylesheet" href="/ProjectWebpro/box.css?v=<?php echo time(); ?>">
     <style>
+        .body {
+            background-color: rgb(50, 50, 50);
+        }
+
         .mech {
             text-align: left;
             float: left;
@@ -44,6 +48,13 @@ if (isset($_GET['logout'])) {
                 transform: translateY(0);
             }
         }
+
+        .success {
+            font-family: 'Varela Round', sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            background-color: green;
+        }
     </style>
 </head>
 
@@ -56,8 +67,19 @@ if (isset($_GET['logout'])) {
         ?>
         <br>
     </div>
-
+    
     <div class="box-home">
+    <?php if (isset($_SESSION['success'])) : ?>
+        <div class="success">
+            <center>
+                <h1><?php
+                    echo $_SESSION['success'];
+                    unset($_SESSION['success']);
+                    ?>
+                </h1>
+            </center>
+        </div>
+    <?php endif ?>
         <div class="mech">
             <h1>Mechanical Keyboard</h1>
             <p2>by Panwa Muangsong</p2>

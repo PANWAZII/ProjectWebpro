@@ -8,11 +8,13 @@
         $username = mysqli_real_escape_string($conn, $_POST['username']);
         $password = mysqli_real_escape_string($conn, $_POST['password']);
 
-        if (empty($username)) {
+        if (empty($username)) {           
+            $_SESSION['error'] = "Username is required";
             array_push($errors, "Username is required");
         }
 
-        if (empty($password)) {
+        if (empty($password)) { 
+            $_SESSION['error'] = "Password is required";
             array_push($errors, "Password is required");
         }
 
@@ -22,7 +24,7 @@
             
             if (mysqli_num_rows($result) == 1) {
                 $_SESSION['username'] = $username;
-                $_SESSION['success'] = "Your are now logged in";
+                $_SESSION['success'] = "Your are now logged in as ".$username;
                 header("location: /ProjectWebpro/loggedin/index.php");
             } else {
                 array_push($errors, "Wrong Username or Password");

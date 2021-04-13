@@ -12,6 +12,16 @@ include('connectDB.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        @keyframes fadein {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
         .body {
             background-color: rgb(50, 50, 50);
         }
@@ -24,6 +34,7 @@ include('connectDB.php');
             background-color: rgb(25, 25, 25);
             border-radius: 25px;
             box-shadow: 0px 0px 10px #000000;
+            animation: fadein 1s;
         }
 
         .textbox {
@@ -99,6 +110,22 @@ include('connectDB.php');
             margin-right: 25px;
             margin-bottom: 25px;
         }
+
+        .error {
+            width: 400px;
+            height: 30px;
+            background-color: red;
+            border: none;
+            border-radius: 50px;
+
+        }
+
+        .text {
+            padding: 4px;
+            font-family: 'Varela Round', sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+        }
     </style>
 </head>
 
@@ -112,20 +139,23 @@ include('connectDB.php');
 
     <br>
     <center>
-        <form action="loginDB.php" method="post">
-            <?php if (isset($_SESSION['error'])) : ?>
-                <div class="error">
-                    <h3>
-                        <?php
-                        echo $_SESSION['error'];
-                        unset($_SESSION['error']);
-                        ?>
-                    </h3>
-                </div>
-            <?php endif ?>
+        <form action="registerDB.php" method="post" onsubmit="return checkForm(this);">
+
             <div class="box">
                 <br>
+
                 <table>
+                    <?php include('errors.php'); ?>
+                    <?php if (isset($_SESSION['error'])) : ?>
+                        <div class="error">
+                            <h3 class="text">
+                                <?php
+                                echo $_SESSION['error'];
+                                unset($_SESSION['error']);
+                                ?>
+                            </h3>
+                        </div>
+                    <?php endif ?>
                     <tr>
                         <th width=300 height="auto"></th>
                         <td width=300 height="auto"></td>
@@ -162,13 +192,13 @@ include('connectDB.php');
                     <tr>
                         <th colspan="2" width=300 height="auto">
                             <div class="text-normal">Password</div>
-                            <input type="password" class="textbox" name="password1" required>
+                            <input type="password" class="textbox" name="password1" id="password1" required>
                         </th>
                     </tr>
                     <tr>
                         <th colspan="2" width=300 height="auto">
                             <div class="text-normal">Confirm Password</div>
-                            <input type="password" class="textbox" name="password2" required>
+                            <input type="password" class="textbox" name="password2" id="password2" required>
                         </th>
                     </tr>
                     <tr>
@@ -179,6 +209,7 @@ include('connectDB.php');
             </div>
         </form>
     </center>
+
 </body>
 
 </html>
