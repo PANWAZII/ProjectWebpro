@@ -20,7 +20,6 @@
             $query = "SELECT * FROM user WHERE username = '$username' AND password = '$password' ";
             $result = mysqli_query($conn, $query);
             
-
             if (mysqli_num_rows($result) == 1) {
                 $_SESSION['username'] = $username;
                 $_SESSION['success'] = "Your are now logged in";
@@ -36,5 +35,3 @@
             header("location: /ProjectWebpro/login.php");
         }
     }
-
-?>
