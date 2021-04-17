@@ -121,7 +121,7 @@
         .skill {
             justify-content: center;
             text-align: left;
-            width: 45%;
+            width: 47%;
             height: 120px;
         }
     </style>
