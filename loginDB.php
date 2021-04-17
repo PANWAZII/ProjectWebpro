@@ -20,10 +20,14 @@
 
         if (count($errors) == 0) {
             $query = "SELECT * FROM user WHERE username = '$username' AND password = '$password' ";
+            
             $result = mysqli_query($conn, $query);
             
             if (mysqli_num_rows($result) == 1) {
+                $sql = $con->query("SELECT id FROM user WHERE username='$username'");
+                $data = $sql->fetch_assoc();
                 $_SESSION['username'] = $username;
+                $_SESSION['userID'] = $data['id'];
                 $_SESSION['success'] = "Your are now logged in as ".$username;
                 header("location: /ProjectWebpro/loggedin/index.php");
             } else {
