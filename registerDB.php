@@ -56,12 +56,14 @@ if (isset($_POST['user_register'])) {
         $sql = "INSERT INTO user (username ,email, password, firstname, lastname) 
             VALUES ('$username','$email', '$password','$firstname','$lastname')";
         mysqli_query($conn, $sql);
+        $getID = $con->query("SELECT id FROM user WHERE username='$username'");
+        $ID = $getID->fetch_assoc();
 
         $_SESSION['username'] = $username;
+        $_SESSION['userID'] = $ID['id'];
         $_SESSION['success'] = "You are now logged in";
         header('location: /ProjectWebpro/loggedin/index.php');
     } else {
         header("location: register.php");
     }
 }
-?>
