@@ -7,6 +7,8 @@
 
     // Create Connection
     $conn = mysqli_connect($servername, $username, $password, $dbname);
+    // Create Connection for userID
+    $con = new mysqli('localhost', 'root', '', 'projectwebpro');
 
     // Check connection
     if (!$conn) {
