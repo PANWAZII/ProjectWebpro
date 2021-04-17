@@ -60,7 +60,7 @@
             margin-top: 100px;
             margin-bottom: 30px;
             width: 70%;
-            height: 1000px;
+            height: 900px;
             background-color: rgb(25, 25, 25);
             border-radius: 25px;
             box-shadow: 0px 0px 10px #000000;
