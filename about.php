@@ -114,7 +114,7 @@
             font-weight: 400;
             font-size: 20px;
             color: white;
-            animation: fadein 2s;
+            animation: slideup1 1s;
             text-shadow: 0px 0px 9px #000000;
         }
 
