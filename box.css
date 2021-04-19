@@ -13,6 +13,13 @@
     background-image: url("/ProjectWebpro/materials/switch/switch.jpg");
 }
 
+.box-keycap {
+    margin-top: 62px;
+    width: 100%;
+    height: 400px;
+    background-image: url("/ProjectWebpro/materials/keycap/keycap.jpg");
+}
+
 .box2 {
     margin-top: 0px;
     width: 100%;
@@ -81,7 +88,7 @@
     color: rgb(255, 255, 255);
 }
 
-.pic{
+.pic {
     float: left;
     margin-top: 60px;
     margin-left: 0px;
