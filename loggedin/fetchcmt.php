@@ -112,7 +112,7 @@ if (isset($_GET['logout'])) {
     ?>
             <p>
             <div class="namecolor">@<?= $row['username']; ?></p>
-                <div class="date"><?php echo date('m/d/Y H:i:s', strtotime($row['createdOn'])); ?></div>
+                <div class="date"><?php echo $row['createdOn']; ?></div>
             </div>
             <div class="card">
                 <p><?= $row['comment']; ?></p>

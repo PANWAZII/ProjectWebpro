@@ -16,8 +16,12 @@ if (isset($_GET['logout'])) {
 if (isset($_POST['comment'])) {
     $username = $_SESSION['username'];
     $comment = mysqli_real_escape_string($conn, $_POST['comment']);
+    date_default_timezone_set('Asia/Bangkok');
+    $date = date('d/m/y h:i:s');
+    // $date = new DateTime("now", new DateTimeZone('Etc/GMT+7') );
+    // $datenow = date_format($date, 'd/m/Y');
     $sql = "INSERT INTO comments (username, comment, createdOn) 
-    VALUES ('$username','$comment', NOW())";
+    VALUES ('$username','$comment', '$date' )";
     mysqli_query($conn, $sql);
 }
 
