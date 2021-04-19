@@ -27,12 +27,13 @@ if (isset($_GET['logout'])) {
         .body {
             background-color: rgb(50, 50, 50);
         }
+
         .mech {
             text-align: left;
             float: left;
             font-family: 'Varela Round', sans-serif;
             font-weight: 400;
-            font-size: 30px;
+            font-size: 40px;
             margin-left: 70px;
             margin-top: 200px;
             color: rgb(255, 255, 255);
@@ -69,7 +70,7 @@ if (isset($_GET['logout'])) {
         <br>
     </div>
 
-    <div class="box-switch">
+    <div class="box-keycap">
         <div class="mech">
             <h1>Keycaps</h1>
         </div>
@@ -81,9 +82,9 @@ if (isset($_GET['logout'])) {
                 <tr>
                     <th width="700" height="500">
                         <div class="textbox1">
-                            <h1>Mechanical Switch คืออะไร?</h1>
+                            <h1>Keycaps คืออะไร?</h1>
                         </div>
-                        <img class="pic" src="/ProjectWebpro/materials/switch/switchDemo.gif" alt="keyboard" width=500 height="auto" />
+                        <img class="pic" src="/ProjectWebpro/materials/keycap/keycap.gif" alt="keyboard" width=500 height="auto" />
                     </th>
                     <td width="800" height="500">
                         <br>
@@ -91,8 +92,10 @@ if (isset($_GET['logout'])) {
                         <br>
                         <br>
                         <br>
-                        <div class="textbox2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; คีย์บอร์ดสำหรับเล่นเกมคอมพิวเตอร์ที่ได้รับความนิยมอยู่ในขณะนี้ ส่วนใหญ่จะเลือกใช้สวิตช์ปุ่มกดแบบที่เรียกว่า Mechanical Switch (แมคคานิคอล สวิตช์) </div>
-                        <div class="textbox2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; สวิตช์ของคีย์บอร์ด Mechanical นั้นจะมีแบ่งออกเป็นหลายสีซึ่งมีกลไกการทำงานที่แตกต่างกัน แยกออกเป็น 3 ประเภทหลัก ๆ คือ Linear Switch, Clicky Switch และ Tactile Switch ซึ่งแต่ละประเภทก็แบ่งออกมาเป็นหลายๆสีซึ่งแต่ละสีก็จะมีน้ำหนักการกดที่แตกต่างกัน</div>
+                        <div class="textbox2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; เสน่ห์อย่างนึงของ Mechanical Keyboard คือการที่เราสามารถถอดเปลี่ยนตัวปุ่มพิมพ์ได้ ปุ่มนี่เรียกกันว่า คีย์แคป (Keycap)
+
+                        </div>
+                        <div class="textbox2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; โดยเราสามารถดึงขึ้นมาเพื่อเปลี่ยนเป็นแบบที่เราต้องการได้สามารถตกแต่งได้สวยงาม แล้วแต่กำลังทรัพย์ของแต่ละคนเลย</div>
                     </td>
                 </tr>
             </table>
@@ -104,13 +107,37 @@ if (isset($_GET['logout'])) {
                 <tr>
                     <th width="700" height="500">
                         <div class="textbox1">
-                            <h1>ยี่ห้อ Mechanical Switch</h1>
+                            <h1>วัสดุของ Keycaps มีอะไรบ้าง?</h1>
                         </div>
-                        <img class="pic" src="/ProjectWebpro/materials/switch/brand.jpg" alt="keyboard2" width=500 height="auto" />
+                        <img class="pic" src="/ProjectWebpro/materials/keycap/compare.jpg" alt="keyboard2" width=500 height="auto" />
                     </th>
                     <td width="800" height="500">
-                        <div class="textbox2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Mechanical Switch แต่ละแบรนด์ก็จะมีหลากหลายแบรนด์ให้เลือกซึ่งแบรนด์หลักก็จะมี <a class="swtlink" target="_blank" href="https://www.cherrymx.de/en">Cherry</a> , <a class="swtlink" target="_blank" href="http://en.gateron.cn/">Gateron</a> , <a class="swtlink" target="_blank" href="https://www.kailhswitch.com/faq1">Kailh</a> , <a class="swtlink" target="_blank" href="https://www.razer.com/razer-mechanical-switches">Razer</a> , <a class="swtlink" target="_blank" href="https://www.logitechg.com/th-th/innovation/mechanical-switches.html">Logitech</a> , <a class="swtlink" target="_blank" href="https://www.pcgamingrace.com/products/glorious-panda-mechanical-switches">Glorious</a> ความแตกต่างของแต่ละแบรนด์คือราคา
-                            ยิ่งราคาสูง งานประกอบและวัสดุก็ยิ่งดี</div>
+                        <div class="textbox2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; วัสดุของ Keycaps นั้นเป็นพลาสติกที่มีค่อนข้างหลากหลายกันครับ โดยประเภทที่นิยมๆ หลักๆ ก็จะมี ABS และ PBT</div>
+                        <div class="textbox2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ABS ย่อมากจาก “Acrylonitrile Butadiene Styrene” พลาสติก ABS ส่วนมากเป็นแบบที่พบเจอกันมากที่สุดในปัจจุบันของชุด Keycap ที่ติดมาใน Mechanical keyboard เป็นพลาสติกเกรดแข็งที่นิมใช้กันเพราะคงทนระดับนึงและต้นทุนถูกกว่า ซึ่ง 90% ของตลาดนั้นแถมคีย์แคปมาเป็น ABS</div>
+                        <div class="textbox2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ส่วนของ PBT ย่อมาจาก “polybutylene terephthalate” โดย PBT นั้นส่วนใหญ่แล้วจะมีความคงทนมากกว่า ABS พอสมควร โดย PBT มักจะนิยมมาใน Mechanical Keyboard เฉพาะทางสำหรับคนที่ชื่นชอบ Mechanical Keyboard พอสมควร หรือจะมาเป็นในแบบชุด Keycap ที่คนหาซื้อมาเปลี่ยนเพิ่มเองมากกว่า</div>
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </div>
+    <div class="box/">
+        <center>
+            <table border="0">
+                <tr>
+                    <th width="700" height="500">
+                        <div class="textbox1">
+                            <h1>ABS vs PBT ต่างกันอย่างไร?</h1>
+                        </div>
+                        <img class="pic" src="/ProjectWebpro/materials/keycap/demo.jpg" alt="keyboard2" width=500 height="auto" />
+                    </th>
+                    <td width="800" height="500">
+                        <br><br><br><br>
+                        <div class="textbox2"> PBT ส่วนใหญ่มักจะให้ความรู้สึกแน่นหนักกว่า ABS</div>
+                        <div class="textbox2"> PBT ส่วนใหญ่มักจะให้ความรู้สึกสัมผัสสากๆกว่า ABS</div>
+                        <div class="textbox2"> ABS จะเกิดอาการขึ้นเงา (Shiny) ง่ายกว่า PBT</div>
+                        <div class="textbox2"> ABS แพ้ความร้อนง่ายกว่า PBT</div>
+                        <div class="textbox2"> PBT มีโอกาสเบี้ยวผิดรูป (Warp) ง่ายกว่า ABS ในการผลิต</div>
+                        <div class="textbox2"> PBT จะราคาสูงกว่า ABS</div>
                     </td>
                 </tr>
             </table>
